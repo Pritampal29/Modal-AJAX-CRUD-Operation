@@ -24,6 +24,9 @@
     </div>
     <div class="container tbl pb-5">
         <div class="row pb-2">
+            <div class="col-3 text-start" id="searchField">
+                <input type="search" name="search" id="srch_fld" class="form-control" placeholder="Search Data...">
+            </div>
             <div class="col text-end">
                 <button type="button" class="btn btn-warning addbtn" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">

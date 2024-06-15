@@ -103,6 +103,23 @@ $(document).ready(function() {
         });
     });
 
+
+
+    // Search Data From Database
+    
+    $('#srch_fld').on('keyup',function(){
+        var searchData = $(this).val();
+
+        $.ajax({
+            url: 'search_file.php',
+            type: 'post',
+            data: {sdata:searchData},
+            success: function(data) {
+                $('#tab-data').html(data);
+            }
+        });
+    });
+
     
 
 });
